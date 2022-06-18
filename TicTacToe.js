@@ -145,12 +145,14 @@ function Board() {
   const renderWinnerArea = () => {
     return winner == null
       ? null
-      : <div
-        id="winnerArea"
-        className="winner"
-        style={instructionsStyle}>
-        Winner: <span>{winner}</span>
-      </div>;
+      : (
+          <div
+            id="winnerArea"
+            className="winner"
+            style={instructionsStyle}>
+            Winner: <span>{winner}</span>
+          </div>
+        );
   }
   const renderGameBoard = () => {
     return (
